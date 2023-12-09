@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:500&display=swap);
+
+lbody {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: url('https://source.unsplash.com/random') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+.lcontainer {
+  position: relative;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.lcontainer-forms {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lbtn {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff73b3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  box-shadow: 0 4px 6px -1px rgba(255, 115, 179, 0.4);
+  margin: 5px;
+}
+
+.lbtn:hover {
+  background-color: #ff4f9b;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: all 0.3s;
+  font-family: 'Roboto', sans-serif;
+  margin: 10px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff73b3;
+  box-shadow: 0 0 5px rgba(255, 115, 179, 0.5);
+}
